@@ -1,0 +1,106 @@
+Token: Identifier            x
+<Statement List> -> <Statement> | <Statement> <Statement List>
+<Statement> -> <Compound> | <Assign> | <If> | <Return> | <Print> | <Scan> | <While> 
+<Assign> -> <Identifier> = <Expression>;
+Token: Operator            =
+Token: Identifier            a
+<Expression> -> <Term> <ExpressionPrime>
+<Term> -> <Factor> <TermPrime>
+<Factor> -> - <Primary> | <Primary>
+<Primary> -> <Identifier> | <Integer> | <Identifier> (<IDs>) | (<Expression>) | <Real> | true | false
+Token: Operator            +
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Empty>->Epsilon
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | -<Term> <ExpressionPrime> | <Empty>
+Token: Identifier            b
+<Term> -> <Factor> <TermPrime>
+<Factor> -> - <Primary> | <Primary>
+<Primary> -> <Identifier> | <Integer> | <Identifier> (<IDs>) | (<Expression>) | <Real> | true | false
+Token: Seperator            ;
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Empty>->Epsilon
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | -<Term> <ExpressionPrime> | <Empty>
+<Empty>->Epsilon
+Token: Identifier            z
+<Statement> -> <Compound> | <Assign> | <If> | <Return> | <Print> | <Scan> | <While> 
+<Assign> -> <Identifier> = <Expression>;
+Token: Operator            =
+Token: Identifier            c
+<Expression> -> <Term> <ExpressionPrime>
+<Term> -> <Factor> <TermPrime>
+<Factor> -> - <Primary> | <Primary>
+<Primary> -> <Identifier> | <Integer> | <Identifier> (<IDs>) | (<Expression>) | <Real> | true | false
+Token: Operator            +
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Empty>->Epsilon
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | -<Term> <ExpressionPrime> | <Empty>
+Token: Identifier            d
+<Term> -> <Factor> <TermPrime>
+<Factor> -> - <Primary> | <Primary>
+<Primary> -> <Identifier> | <Integer> | <Identifier> (<IDs>) | (<Expression>) | <Real> | true | false
+Token: Seperator            ;
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Empty>->Epsilon
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | -<Term> <ExpressionPrime> | <Empty>
+<Empty>->Epsilon
+Token: Identifier            a
+<Statement> -> <Compound> | <Assign> | <If> | <Return> | <Print> | <Scan> | <While> 
+<Assign> -> <Identifier> = <Expression>;
+Token: Operator            =
+Token: Identifier            e
+<Expression> -> <Term> <ExpressionPrime>
+<Term> -> <Factor> <TermPrime>
+<Factor> -> - <Primary> | <Primary>
+<Primary> -> <Identifier> | <Integer> | <Identifier> (<IDs>) | (<Expression>) | <Real> | true | false
+Token: Operator            -
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Empty>->Epsilon
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | -<Term> <ExpressionPrime> | <Empty>
+Token: Identifier            f
+<Term> -> <Factor> <TermPrime>
+<Factor> -> - <Primary> | <Primary>
+<Primary> -> <Identifier> | <Integer> | <Identifier> (<IDs>) | (<Expression>) | <Real> | true | false
+Token: Seperator            ;
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Empty>->Epsilon
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | -<Term> <ExpressionPrime> | <Empty>
+<Empty>->Epsilon
+Token: Identifier            b
+<Statement> -> <Compound> | <Assign> | <If> | <Return> | <Print> | <Scan> | <While> 
+<Assign> -> <Identifier> = <Expression>;
+Token: Operator            =
+Token: Identifier            g
+<Expression> -> <Term> <ExpressionPrime>
+<Term> -> <Factor> <TermPrime>
+<Factor> -> - <Primary> | <Primary>
+<Primary> -> <Identifier> | <Integer> | <Identifier> (<IDs>) | (<Expression>) | <Real> | true | false
+Token: Operator            *
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+Token: Identifier            n
+<Term> -> <Factor> <TermPrime>
+<Factor> -> - <Primary> | <Primary>
+<Primary> -> <Identifier> | <Integer> | <Identifier> (<IDs>) | (<Expression>) | <Real> | true | false
+Token: Seperator            ;
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Empty>->Epsilon
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | -<Term> <ExpressionPrime> | <Empty>
+<Empty>->Epsilon
+Token: KeyWord            while
+<While>:: = while ( <condition> ) <Statement> whileend
+Token: Seperator            (
+Token: Seperator            )
+Token: KeyWord            whileend
+Token: Seperator            ;
+<Empty>->Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Empty>->Epsilon
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | -<Term> <ExpressionPrime> | <Empty>
+<Empty>->Epsilon
